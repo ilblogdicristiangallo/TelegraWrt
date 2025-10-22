@@ -129,5 +129,7 @@ Install the package with the command:
 <pre>opkg install /tmp/telegramwrt_1.0.0_all.ipk
 </pre>
 
+# Screen use TelegramWrt 
 
+<img src="https://raw.githubusercontent.com/ilblogdicristiangallo/TelegramWrt/main/screenTelegramWrt.png" alt="Screenshot TelegramWrt" width="600">
 
