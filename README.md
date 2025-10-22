@@ -132,4 +132,4 @@ Install the package with the command:
 # Screen use TelegramWrt 
 
 <img src="https://raw.githubusercontent.com/ilblogdicristiangallo/TelegramWrt/main/screenTelegramWrt.png" alt="Screenshot TelegramWrt" width="600">
-
+<img src="https://raw.githubusercontent.com/ilblogdicristiangallo/TelegramWrt/main/ScreenTelegramWrt2.png" alt="Screen TelegramWrt 2" width="600">
