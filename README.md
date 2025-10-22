@@ -1,5 +1,7 @@
 # TelegramWrt
 
+<img src="https://raw.githubusercontent.com/ilblogdicristiangallo/TelegraWrt/main/logo_telegramwrt.jpg" alt="TelegramWrt OpenWRT Logo" width="400">
+
 TelegramWrt is a modular package for OpenWrt that integrates a Telegram bot with advanced diagnostics, monitoring, and remote control capabilities. Each plugin is designed to be extensible, reproducible, and compatible across multiple architectures.
 
 ## 📦 Requirements
