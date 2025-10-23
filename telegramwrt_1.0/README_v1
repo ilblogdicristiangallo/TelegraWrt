@@ -1,0 +1,120 @@
+TelegramWrt is a modular package for OpenWrt that integrates a Telegram bot with advanced diagnostics, monitoring, and remote control capabilities. Each plugin is designed to be extensible, reproducible, and compatible across multiple architectures.
+
+## 📦 Requirements
+
+Before using TelegramWrt, make sure the following packages are installed:
+<pre>
+opkg update
+opkg install wget
+opkg install jq
+opkg install curl
+opkg install bash
+</pre>
+
+⚙️ Initial Configuration
+After installation, configure the bot by editing the file:
+<pre>vi /usr/lib/TelegramWrt/config
+</pre>
+
+Insert your TOKEN and CHATID:
+
+<pre>TOKEN="123456789:ABCdefGhIjKlMnOpQrStUvWxYz"
+CHATID="987654321"
+</pre>
+
+# 🔐 The TOKEN is generated via BotFather on Telegram. The CHATID can be retrieved by sending a message to the bot and reading the response via logging or diagnostic plugins.
+
+# 🚀 Installation
+Install the .ipk package with:
+<pre>opkg install /tmp/telegramwrt_1.0.0_all.ipk
+</pre>
+
+The package installs the bot and all plugins under /usr/lib/TelegramWrt/.
+
+🧩 Supported Telegram Commands
+TelegramWrt includes the following modules, each triggered via a Telegram command:
+
+| **Command**       | **Function**                             |
+| ----------------- | ---------------------------------------- |
+| `/backup_config`  | Save the current OpenWrt configuration   |
+| `/block_ip`       | Block an IP address using firewall rules |
+| `/cpu_load`       | Show CPU load                            |
+| `/devices`        | List connected devices                   |
+| `/dhcp_leases`    | Display active DHCP leases               |
+| `/disk_space`     | Show disk usage                          |
+| `/dns_status`     | Check DNS status                         |
+| `/firewall_rules` | List active firewall rules               |
+| `/help`           | Show available commands                  |
+| `/log_tail`       | Send the last lines of the system log    |
+| `/mac_watch`      | Monitor specific MAC addresses           |
+| `/open_ports`     | List open ports                          |
+| `/ping_sweep`     | Perform a network ping sweep             |
+| `/ping_test`      | Ping a specific host                     |
+| `/ram_usage`      | Show RAM usage                           |
+| `/reboot`         | Reboot the device                        |
+| `/ssh_status`     | Check SSH service status                 |
+| `/start`          | Initialize the bot or show its status    |
+| `/status`         | Show a system status summary             |
+| `/uptime`         | Show system uptime                       |
+| `/vpn_status`     | Check VPN status                         |
+| `/wan_ip`         | Show the public (WAN) IP address         |
+| `/wifi_status`    | Show Wi-Fi interface status              |
+
+
+# 📤 Usage Example
+
+Once configured, send a command to the bot:
+<pre>/status
+</pre>
+
+# 🔁 Automatic Bot Startup
+
+To ensure that TelegramWrt starts automatically every time your OpenWrt device reboots, add the following command to the rc.local file:
+<pre>bash /usr/lib/TelegramWrt/telegram.sh &
+</pre>
+
+# 📌 Steps:
+
+Open the rc.local file with a text editor:
+
+<pre>vi /etc/rc.local</pre>
+
+Insert the command before the line exit 0:
+
+<pre>bash /usr/lib/TelegramWrt/telegram.sh &</pre>
+
+Save and exit (ctrt+c, then :wq!).
+
+# ✅ The & symbol is essential: it runs the bot in the background, preventing it from blocking the boot process.
+
+# 🖥️ Installing TelegramWrt with WinSCP
+WinSCP is a Windows SFTP client that allows easy file transfers between your PC and OpenWrt router using a graphical interface.
+
+# Requirements
+OpenWrt router with SSH access enabled
+
+WinSCP installed on your PC: Download WinSCP
+
+telegramwrt_1.0.0_all.ipk file saved on your computer
+
+# 📌 Steps
+Launch WinSCP and create a new connection:
+
+Protocol: SCP or SFTP
+
+Host name: Router IP (e.g., 192.168.1.1)
+
+Username: root
+
+Password: (your router password)
+
+Connect and navigate to the /tmp directory on the router.
+
+Drag and drop the telegramwrt_1.0.0_all.ipk file from your PC into the router’s /tmp folder.
+
+Open a terminal session directly from WinSCP (menu “Commands” → “Open Terminal”) or use PuTTY.
+
+Install the package with the command:
+
+<pre>opkg install /tmp/telegramwrt_1.0.0_all.ipk
+</pre>
