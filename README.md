@@ -30,13 +30,15 @@ CHATID="987654321"
 
 # 🚀 Installation
 Install the .ipk package with:
-<pre>opkg install /tmp/telegramwrt_1.0.0_all.ipk
+<pre>opkg install /tmp/telegramwrt_1.0.1_all.ipk
 </pre>
 
 The package installs the bot and all plugins under /usr/lib/TelegramWrt/.
 
 🧩 Supported Telegram Commands
 TelegramWrt includes the following modules, each triggered via a Telegram command:
+
+<markdown-accessiblity-table data-catalyst="">
 <table border="1">
   <thead>
     <tr>
@@ -45,31 +47,40 @@ TelegramWrt includes the following modules, each triggered via a Telegram comman
     </tr>
   </thead>
   <tbody>
-    <tr><td>/backup_config</td><td>Save current OpenWrt configuration</td></tr>
-    <tr><td>/block_ip</td><td>Block an IP using firewall rules</td></tr>
-    <tr><td>/cpu_load</td><td>Show CPU load</td></tr>
-    <tr><td>/devices</td><td>List connected devices</td></tr>
-    <tr><td>/dhcp_leases</td><td>Display active DHCP leases</td></tr>
-    <tr><td>/disk_space</td><td>Show disk usage</td></tr>
-    <tr><td>/dns_status</td><td>Check DNS status</td></tr>
-    <tr><td>/firewall_rules</td><td>List active firewall rules</td></tr>
-    <tr><td>/help</td><td>Show available commands</td></tr>
-    <tr><td>/log_tail</td><td>Send last lines of system log</td></tr>
-    <tr><td>/mac_watch</td><td>Monitor specific MAC addresses</td></tr>
-    <tr><td>/open_ports</td><td>List open ports</td></tr>
-    <tr><td>/ping_sweep</td><td>Perform network ping sweep</td></tr>
-    <tr><td>/ping_test</td><td>Ping a specific host</td></tr>
-    <tr><td>/ram_usage</td><td>Show RAM usage</td></tr>
-    <tr><td>/reboot</td><td>Reboot the device</td></tr>
-    <tr><td>/ssh_status</td><td>Check SSH service status</td></tr>
-    <tr><td>/start</td><td>Initialize bot or show status</td></tr>
-    <tr><td>/status</td><td>System status summary</td></tr>
-    <tr><td>/uptime</td><td>Show system uptime</td></tr>
-    <tr><td>/vpn_status</td><td>Check VPN status</td></tr>
-    <tr><td>/wan_ip</td><td>Show public (WAN) IP</td></tr>
-    <tr><td>/wifi_status</td><td>Show Wi-Fi interface status</td></tr>
+    <tr><td>/ssh_status</td><td>Check if SSH is active and which port is used</td></tr>
+    <tr><td>/open_ports</td><td>List open ports and active services</td></tr>
+    <tr><td>/firewall_rules</td><td>Show current firewall rules</td></tr>
+    <tr><td>/block_ip</td><td>Block a specific IP address</td></tr>
+    <tr><td>/mac_watch</td><td>Alert if unknown MAC addresses connect</td></tr>
+    <tr><td>/vpn_status</td><td>Show VPN connection status</td></tr>
+    <tr><td>/devices</td><td>List connected devices via DHCP and Wi-Fi</td></tr>
+    <tr><td>/wifi_status</td><td>Show wireless interface status</td></tr>
+    <tr><td>/wan_ip</td><td>Display public IP and gateway</td></tr>
+    <tr><td>/ping_sweep</td><td>Scan subnet for active IPs (confirmation required)</td></tr>
+    <tr><td>/ping_test</td><td>Run a ping test to an external host</td></tr>
+    <tr><td>/dns_status</td><td>Show current DNS configuration</td></tr>
+    <tr><td>/dhcp_leases</td><td>List active DHCP leases</td></tr>
+    <tr><td>/status</td><td>Show bot status and connection</td></tr>
+    <tr><td>/uptime</td><td>Display router uptime</td></tr>
+    <tr><td>/cpu_load</td><td>Show CPU load and temperature</td></tr>
+    <tr><td>/ram_usage</td><td>Display memory usage</td></tr>
+    <tr><td>/disk_space</td><td>Show available disk space</td></tr>
+    <tr><td>/log_tail</td><td>Show last system log entries</td></tr>
+    <tr><td>/reboot</td><td>Reboot the router</td></tr>
+    <tr><td>/restart_bot</td><td>Restart the Telegram bot</td></tr>
+    <tr><td>/update_bot</td><td>Update bot script from remote source</td></tr>
+    <tr><td>/backup_config</td><td>Backup OpenWrt configuration</td></tr>
+    <tr><td>/restore_config</td><td>Restore configuration from backup</td></tr>
+    <tr><td>/start</td><td>Show this command list</td></tr>
+    <tr><td>/help</td><td>Extended command descriptions</td></tr>
+    <tr><td>/opkg_installed</td><td>List installed packages (names only)</td></tr>
+    <tr><td>/opkg_update</td><td>Update package repositories</td></tr>
+    <tr><td>/opkg_install</td><td>Install a package from repository by name</td></tr>
+    <tr><td>/opkg_remove</td><td>Remove an installed package by name</td></tr>
   </tbody>
 </table>
+</markdown-accessiblity-table>
+
 
 # 📤 Usage Example
 
@@ -120,16 +131,22 @@ Password: (your router password)
 
 Connect and navigate to the /tmp directory on the router.
 
-Drag and drop the telegramwrt_1.0.0_all.ipk file from your PC into the router’s /tmp folder.
+Drag and drop the telegramwrt_1.0.1_all.ipk file from your PC into the router’s /tmp folder.
 
 Open a terminal session directly from WinSCP (menu “Commands” → “Open Terminal”) or use PuTTY.
 
 Install the package with the command:
 
-<pre>opkg install /tmp/telegramwrt_1.0.0_all.ipk
+<pre>opkg install /tmp/telegramwrt_1.0.1_all.ipk
 </pre>
 
-# Screen use TelegramWrt 
+# Screen use TelegramWrt_V1.0.1
 
-<img src="https://raw.githubusercontent.com/ilblogdicristiangallo/TelegramWrt/main/screenTelegramWrt.png" alt="Screenshot TelegramWrt" width="600">
-<img src="https://raw.githubusercontent.com/ilblogdicristiangallo/TelegramWrt/main/ScreenTelegramWrt2.png" alt="Screen TelegramWrt 2" width="600">
+<img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/telegram_screen_1.01.png?raw=true" 
+     alt="TelegramWrt bot interface screenshot" 
+     width="600" />
+
+<img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/telegram_screen_1.01_2.png?raw=true" 
+     alt="TelegramWrt bot interface second screenshot" 
+     width="600" />
+
