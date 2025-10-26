@@ -150,3 +150,5 @@ Install the package with the command:
      alt="TelegramWrt bot interface second screenshot" 
      width="600" />
 
+# Visit my blog
+https://www.ilblogdicristiangallo.com
