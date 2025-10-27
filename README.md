@@ -105,6 +105,8 @@ Open the rc.local file with a text editor:
 Insert the command before the line exit 0:
 
 <pre>bash /usr/lib/TelegramWrt/telegram.sh &</pre>
+# News v1.0.2 message_reboot
+<pre>bash /usr/lib/TelegramWrt/plugins/message_router &</pre>
 
 Save and exit (ctrt+c, then :wq!).
 
@@ -150,6 +152,12 @@ Install the package with the command:
 
 <img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/ScreenTelegramWrt1.0.2._2png.png?raw=true" 
      alt="TelegramWrt bot interface second screenshot" 
+     width="600" />
+
+# News reboot message V1.0.2
+
+<img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/ScreenTelegramWrt1.0.2._3.png?raw=true" 
+     alt="TelegramWrt reboot message screenshot" 
      width="600" />
 
 # Visit my blog
