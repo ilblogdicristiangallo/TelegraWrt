@@ -13,6 +13,7 @@ opkg install wget
 opkg install jq
 opkg install curl
 opkg install bash
+opkg install tcpdump
 </pre>
 
 ⚙️ Initial Configuration
@@ -30,7 +31,7 @@ CHATID="987654321"
 
 # 🚀 Installation
 Install the .ipk package with:
-<pre>opkg install /tmp/telegramwrt_1.0.1_all.ipk
+<pre>opkg install /tmp/telegramwrt_1.0.2_all.ipk
 </pre>
 
 The package installs the bot and all plugins under /usr/lib/TelegramWrt/.
@@ -60,6 +61,7 @@ TelegramWrt includes the following modules, each triggered via a Telegram comman
     <tr><td>/ping_test</td><td>Run a ping test to an external host</td></tr>
     <tr><td>/dns_status</td><td>Show current DNS configuration</td></tr>
     <tr><td>/dhcp_leases</td><td>List active DHCP leases</td></tr>
+    <tr><td>/tcpdump_dns</td><td>Capture DNS traffic for a short time. Shows client IP, DNS server, and requested domain. Only works if DNS is not encrypted.</td></tr>
     <tr><td>/status</td><td>Show bot status and connection</td></tr>
     <tr><td>/uptime</td><td>Display router uptime</td></tr>
     <tr><td>/cpu_load</td><td>Show CPU load and temperature</td></tr>
@@ -140,7 +142,7 @@ Install the package with the command:
 <pre>opkg install /tmp/telegramwrt_1.0.1_all.ipk
 </pre>
 
-# Screen use TelegramWrt_V1.0.1
+# Screen use TelegramWrt_V1.0.2
 
 <img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/telegram_screen_1.01.png?raw=true" 
      alt="TelegramWrt bot interface screenshot" 
