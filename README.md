@@ -24,7 +24,7 @@ After installation, configure the bot by editing the file:
 Insert your TOKEN and CHATID:
 
 <pre>TOKEN="123456789:ABCdefGhIjKlMnOpQrStUvWxYz"
-CHATID="987654321"
+CHAT_ID="987654321"
 </pre>
 
 # 🔐 The TOKEN is generated via BotFather on Telegram. The CHATID can be retrieved by sending a message to the bot and reading the response via logging or diagnostic plugins.
