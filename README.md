@@ -95,6 +95,8 @@ Once configured, send a command to the bot:
 To ensure that TelegramWrt starts automatically every time your OpenWrt device reboots, add the following command to the rc.local file:
 <pre>bash /usr/lib/TelegramWrt/telegram.sh &
 </pre>
+# or 
+<pre>sh /usr/lib/TelegramWrt/telegram.sh &</pre>
 
 # 📌 Steps:
 
@@ -107,6 +109,8 @@ Insert the command before the line exit 0:
 <pre>bash /usr/lib/TelegramWrt/telegram.sh &</pre>
 # News v1.0.2 message_reboot
 <pre>bash /usr/lib/TelegramWrt/plugins/message_router &</pre>
+# or 
+<pre>sh /usr/lib/TelegramWrt/telegram.sh &</pre>
 
 Save and exit (ctrt+c, then :wq!).
 
