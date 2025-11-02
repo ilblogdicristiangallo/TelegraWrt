@@ -110,7 +110,7 @@ Insert the command before the line exit 0:
 # News v1.0.2 message_reboot
 <pre>bash /usr/lib/TelegramWrt/plugins/message_router &</pre>
 # or 
-<pre>sh /usr/lib/TelegramWrt/message_router.sh &</pre>
+<pre>sh /usr/lib/TelegramWrt/message_router &</pre>
 
 Save and exit (ctrt+c, then :wq!).
 
