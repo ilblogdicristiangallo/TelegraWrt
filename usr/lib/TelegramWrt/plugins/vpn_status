@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo "🔐 VPN Status:"
+echo ""
+
+# WireGuard check
+WG=$(ps | grep -v grep | grep wg-quick)
+WG_IF=$(ip a | grep wg0)
+
+# OpenVPN check
+OVPN=$(ps | grep -v grep | grep openvpn)
+
+if [ -n "$WG" ] || [ -n "$WG_IF" ]; then
+  echo "✅ WireGuard is active (interface wg0)."
+elif [ -n "$OVPN" ]; then
+  echo "✅ OpenVPN is running."
+else
+  echo "❌ No VPN connection detected."
+fi
