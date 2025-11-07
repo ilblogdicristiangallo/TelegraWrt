@@ -31,7 +31,7 @@ CHAT_ID="987654321"
 
 # 🚀 Installation
 Install the .ipk package with:
-<pre>opkg install /tmp/telegramwrt_1.0.2_all.ipk
+<pre>opkg install /tmp/telegramwrt_1.0.3_all.ipk
 </pre>
 
 The package installs the bot and all plugins under /usr/lib/TelegramWrt/.
@@ -61,6 +61,8 @@ TelegramWrt includes the following modules, each triggered via a Telegram comman
     <tr><td>/ping_test</td><td>Run a ping test to an external host</td></tr>
     <tr><td>/dns_status</td><td>Show current DNS configuration</td></tr>
     <tr><td>/dhcp_leases</td><td>List active DHCP leases</td></tr>
+    <tr><td>/sms_receive</td><td>Reads SMS messages received by the modem (with automatic fallback and duplicate removal)</td>
+    <tr><td>/sms_delete</td><td>Deletes all received SMS messages from the modem and SIM memory (with port-aware verification)</td>
     <tr><td>/tcpdump_dns</td><td>Capture DNS traffic for a short time. Shows client IP, DNS server, and requested domain. Only works if DNS is not encrypted.</td></tr>
     <tr><td>/status</td><td>Show bot status and connection</td></tr>
     <tr><td>/uptime</td><td>Display router uptime</td></tr>
@@ -139,13 +141,13 @@ Password: (your router password)
 
 Connect and navigate to the /tmp directory on the router.
 
-Drag and drop the telegramwrt_1.0.1_all.ipk file from your PC into the router’s /tmp folder.
+Drag and drop the telegramwrt_1.0.3_all.ipk file from your PC into the router’s /tmp folder.
 
 Open a terminal session directly from WinSCP (menu “Commands” → “Open Terminal”) or use PuTTY.
 
 Install the package with the command:
 
-<pre>opkg install /tmp/telegramwrt_1.0.1_all.ipk
+<pre>opkg install /tmp/telegramwrt_1.0.3_all.ipk
 </pre>
 
 # Screen use TelegramWrt_V1.0.2
@@ -162,6 +164,11 @@ Install the package with the command:
 
 <img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/ScreenTelegramWrt1.0.2._3.png?raw=true" 
      alt="TelegramWrt reboot message screenshot" 
+     width="600" />
+
+# News sms V1.0.3
+<img src="https://private-user-images.githubusercontent.com/222483375/511440250-a12dd41f-e9ad-459c-b825-9481d7d54bc8.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjI1MzY1MzIsIm5iZiI6MTc2MjUzNjIzMiwicGF0aCI6Ii8yMjI0ODMzNzUvNTExNDQwMjUwLWExMmRkNDFmLWU5YWQtNDU5Yy1iODI1LTk0ODFkN2Q1NGJjOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEwN1QxNzIzNTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01OGE0MmVkMmMxZTZkY2YwYTc2N2RmN2U0MjNjN2ZmMWJmMjdlMjYyZWUxN2JkNThlMWM4OWI0ZGM3NjFkMzM2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.859knh5v10k1RIZ9Uu6iJPyN-dMGEX0BBF9C1_CSiL8" 
+     alt="TelegramWrt sms message screenshot" 
      width="600" />
 
 # Visit my blog
