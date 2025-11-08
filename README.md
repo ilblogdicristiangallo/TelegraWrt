@@ -171,7 +171,7 @@ Install the package with the command:
      width="600" />
 
 # News sms V1.0.3
-<img src="https://private-user-images.githubusercontent.com/222483375/511440250-a12dd41f-e9ad-459c-b825-9481d7d54bc8.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjI1NDI2NTEsIm5iZiI6MTc2MjU0MjM1MSwicGF0aCI6Ii8yMjI0ODMzNzUvNTExNDQwMjUwLWExMmRkNDFmLWU5YWQtNDU5Yy1iODI1LTk0ODFkN2Q1NGJjOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTEwN1QxOTA1NTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hMThjMjExMTdmNTk0MzM0MjE3MTUxNDNmNTcxY2NhNGUwMGFlZDY2NDBmOWQxODEzN2YwOTU2NDk1Y2ViMjAwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.-s2Jr5fIy1F6C21KchppZljrpGgXMO97aJSrQthYzh0"
+<img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/telegramwrt_1.0.3_sms_screen.png?raw=true"
      alt="TelegramWrt sms message screenshot" 
      width="600" />
 
