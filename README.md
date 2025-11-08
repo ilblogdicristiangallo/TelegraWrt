@@ -4,7 +4,7 @@
 
 TelegramWrt is a modular package for OpenWrt that integrates a Telegram bot with advanced diagnostics, monitoring, and remote control capabilities. Each plugin is designed to be extensible, reproducible, and compatible across multiple architectures.
 
-## 📦 Requirements
+## 📦 Requirements V.1.0, V1.0.1 and V1.0.2 (Manual install dependency)
 
 Before using TelegramWrt, make sure the following packages are installed:
 <pre>
@@ -15,6 +15,10 @@ opkg install curl
 opkg install bash
 opkg install tcpdump
 </pre>
+
+## 📦 Requirements V1.0.3 (Dependency auto-install)
+<pre> opkg update</pre>
+<pre> opkg install telegramwrt_1.0.3_all.ipk</pre>
 
 ⚙️ Initial Configuration
 After installation, configure the bot by editing the file:
