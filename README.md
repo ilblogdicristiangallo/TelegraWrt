@@ -17,7 +17,7 @@ opkg install tcpdump
 </pre>
 
 ## 📦 Requirements V1.0.3 (Dependency auto-install)
-<pre> opkg update
+<pre>opkg update
 opkg /tmp/install telegramwrt_1.0.3_all.ipk</pre>
 
 ⚙️ Initial Configuration
