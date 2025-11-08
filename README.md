@@ -17,8 +17,8 @@ opkg install tcpdump
 </pre>
 
 ## 📦 Requirements V1.0.3 (Dependency auto-install)
-<pre> opkg update</pre>
-<pre> opkg install telegramwrt_1.0.3_all.ipk</pre>
+<pre> opkg update
+opkg /tmp/install telegramwrt_1.0.3_all.ipk</pre>
 
 ⚙️ Initial Configuration
 After installation, configure the bot by editing the file:
