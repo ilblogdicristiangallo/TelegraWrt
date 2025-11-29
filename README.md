@@ -159,7 +159,7 @@ Install the package with the command:
 <pre>opkg install /tmp/telegramwrt_1.0.3_all.ipk
 </pre>
 
-# Screen use TelegramWrt_V1.0.2
+# Screen use TelegramWrt_V1.0.4
 
 <img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/ScreenShot/telegramwrt-v.1.0.4.png?raw=true" 
      alt="TelegramWrt bot interface screenshot" 
