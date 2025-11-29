@@ -161,11 +161,15 @@ Install the package with the command:
 
 # Screen use TelegramWrt_V1.0.2
 
-<img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/ScreenTelegramWrt1.0.2.png?raw=true" 
+<img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/ScreenShot/telegramwrt-v.1.0.4.png?raw=true" 
      alt="TelegramWrt bot interface screenshot" 
      width="600" />
 
-<img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/ScreenTelegramWrt1.0.2._2png.png?raw=true" 
+<img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/ScreenShot/telegramwrt-v.1.0.4_1.png?raw=true" 
+     alt="TelegramWrt bot interface second screenshot" 
+     width="600" />
+
+<img src="https://github.com/ilblogdicristiangallo/TelegramWrt/blob/main/ScreenShot/telegramwrt-v.1.0.4_2.png?raw=true" 
      alt="TelegramWrt bot interface second screenshot" 
      width="600" />
 
