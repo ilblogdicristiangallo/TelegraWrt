@@ -16,9 +16,9 @@ opkg install bash
 opkg install tcpdump
 </pre>
 
-## 📦 Requirements V1.0.3 (Dependency auto-install)
+## 📦 Requirements V1.0.4 (Dependency auto-install)
 <pre>opkg update
-opkg /tmp/install telegramwrt_1.0.3_all.ipk</pre>
+opkg /tmp/install telegramwrt_1.0.4_all.ipk</pre>
 
 ⚙️ Initial Configuration
 After installation, configure the bot by editing the file:
@@ -35,7 +35,7 @@ CHAT_ID="987654321"
 
 # 🚀 Installation
 Install the .ipk package with:
-<pre>opkg install /tmp/telegramwrt_1.0.3_all.ipk
+<pre>opkg install /tmp/telegramwrt_1.0.4_all.ipk
 </pre>
 
 The package installs the bot and all plugins under /usr/lib/TelegramWrt/.
