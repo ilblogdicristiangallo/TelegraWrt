@@ -59,6 +59,11 @@ TelegramWrt includes the following modules, each triggered via a Telegram comman
     <tr><td>/mac_watch</td><td>Alert if unknown MAC addresses connect</td></tr>
     <tr><td>/vpn_status</td><td>Show VPN connection status</td></tr>
     <tr><td>/devices</td><td>List connected devices via DHCP and Wi-Fi</td></tr>
+    <tr><td>/wifi_enable</td><td>Enable the router's WI-FI</td></tr>
+    <tr><td>/wifi_disable</td><td>Disable the router's WI-FI</td></tr>
+    <tr><td>/restart_wifi</td><td>Restart the router's WI-FI interface (useful to renew internet connection)</td></tr>
+    <tr><td>/restart_wan</td><td>Restart the router's WAN interface (renew internet connection)</td></tr>
+    <tr><td>/wan_stop</td><td>Disable the router's WAN interface (stop internet connection)</td></tr>
     <tr><td>/wifi_status</td><td>Show wireless interface status</td></tr>
     <tr><td>/wan_ip</td><td>Display public IP and gateway</td></tr>
     <tr><td>/ping_sweep</td><td>Scan subnet for active IPs (confirmation required)</td></tr>
