@@ -1,3 +1,21 @@
+Requirements V1.0.3 (Dependency auto-install)
+opkg update
+opkg /tmp/install telegramwrt_1.0.3_all.ipk
+⚙️ Initial Configuration After installation, configure the bot by editing the file:
+
+vi /usr/lib/TelegramWrt/config
+Insert your TOKEN and CHATID:
+
+TOKEN="123456789:ABCdefGhIjKlMnOpQrStUvWxYz"
+CHAT_ID="987654321"
+🔐 The TOKEN is generated via BotFather on Telegram. The CHATID can be retrieved by sending a message to the bot and reading the response via logging or diagnostic plugins.
+🚀 Installation
+Install the .ipk package with:
+
+opkg install /tmp/telegramwrt_1.0.3_all.ipk
+The package installs the bot and all plugins under /usr/lib/TelegramWrt/.
+
+🧩 Supported Telegram Commands TelegramWrt includes the following modules, each triggered via a Telegram command:
 
 Command             | Function
 --------------------|--------------------------------------------------------------
